@@ -1,0 +1,20 @@
+### POST 생성
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "title": "title",
+  "content": "content",
+  "countAttributes": {
+    "viewCount": 1
+  }
+}
+
+### POST 조회
+GET http://localhost:8080/posts/1
+
+### 모든 POST 조회
+GET http://localhost:8080/posts
+
+### POST 삭제
+DELETE http://localhost:8080/posts/1
